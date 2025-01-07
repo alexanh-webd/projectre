@@ -1,0 +1,7 @@
+from datetime import datetime
+from datetime import timedelta
+a = '19/03/2005'
+a_obj = datetime.strptime(a,'%d/%m/%Y')
+today = datetime.now()
+days = today-a_obj
+print(days.days)
